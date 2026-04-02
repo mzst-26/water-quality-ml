@@ -6,14 +6,16 @@ Predicting nitrite levels in water samples using Linear Regression, Random Fores
 
 1. Create and activate a virtual environment.
 
+This project uses `.venv` so VS Code and Pylance resolve packages from the same interpreter.
+
 Run this in terminal within the project directory.
 
 <details>
 <summary><strong>Unix/macOS</strong></summary>
 
 ~~~bash
-python3 -m venv venv
-source venv/bin/activate
+python3 -m venv .venv
+source .venv/bin/activate
 python3 -m pip install --upgrade pip
 python3 -m pip install -r requirements.txt
 ~~~
@@ -24,8 +26,8 @@ python3 -m pip install -r requirements.txt
 <summary><strong>Windows (PowerShell)</strong></summary>
 
 ~~~powershell
-py -3 -m venv venv
-venv\Scripts\Activate.ps1
+py -3 -m venv .venv
+.venv\Scripts\Activate.ps1
 py -3 -m pip install --upgrade pip
 py -3 -m pip install -r requirements.txt
 ~~~
@@ -43,7 +45,7 @@ To confirm the virtual environment is activated, check the location of your Pyth
 which python
 
 # Example output:
-# /Users/user/Github/water-quality-ml/venv/bin/python
+# /Users/user/Github/water-quality-ml/.venv/bin/python
 ~~~
 
 </details>
@@ -57,7 +59,7 @@ Get-Command python
 # Example output:
 # CommandType     Name      Version    Source
 # -----------     ----      -------    ------
-# Application     python.exe 3.x.x.x  C:\Users\user\Github\water-quality-ml\venv\Scripts\python.exe
+# Application     python.exe 3.x.x.x  C:\Users\user\Github\water-quality-ml\.venv\Scripts\python.exe
 ~~~
 
 </details>
@@ -71,7 +73,7 @@ Check if pip is installed:
 python3 -m pip --version
 
 # Example output:
-# pip 26.0.1 from /Users/user/Github/water-quality-ml/venv/lib/python3.14/site-packages/pip (python 3.14)
+# pip 26.0.1 from /Users/user/Github/water-quality-ml/.venv/lib/python3.14/site-packages/pip (python 3.14)
 ~~~
 
 </details>
@@ -83,10 +85,17 @@ python3 -m pip --version
 py -3 -m pip --version
 
 # Example output:
-# pip 26.0.1 from C:\Users\user\Github\water-quality-ml\venv\Lib\site-packages\pip (python 3.14)
+# pip 26.0.1 from C:\Users\user\Github\water-quality-ml\.venv\Lib\site-packages\pip (python 3.14)
 ~~~
 
 </details>
+
+## VS Code setup
+
+If `Import "pandas" could not be resolved from source` appears, select the workspace interpreter:
+
+- Command Palette -> `Python: Select Interpreter`
+- Choose `.venv` in this project
 
 
 ## Badges
