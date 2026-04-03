@@ -97,6 +97,36 @@ If `Import "pandas" could not be resolved from source` appears, select the works
 - Command Palette -> `Python: Select Interpreter`
 - Choose `.venv` in this project
 
+## Run Jupyter Notebook
+
+After activating the virtual environment, run one of the following commands from the project root.
+
+<details>
+<summary><strong>Unix/macOS</strong></summary>
+
+~~~bash
+# Open in classic Notebook UI
+jupyter notebook notebooks/main.ipynb
+
+# Or open in JupyterLab
+jupyter lab notebooks/main.ipynb
+~~~
+
+</details>
+
+<details>
+<summary><strong>Windows (PowerShell)</strong></summary>
+
+~~~powershell
+# Open in classic Notebook UI
+py -3 -m notebook notebooks/main.ipynb
+
+# Or open in JupyterLab
+py -3 -m jupyter lab notebooks/main.ipynb
+~~~
+
+</details>
+
 
 ## Badges
 [![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
