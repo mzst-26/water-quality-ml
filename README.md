@@ -129,4 +129,4 @@ py -3 -m jupyter lab notebooks/main.ipynb
 
 
 ## Badges
-[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
+[![MIT Licence](https://img.shields.io/badge/Licence-MIT-green.svg)](LICENSE)
