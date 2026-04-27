@@ -1,5 +1,5 @@
 # water-quality-ml
-Predicting nitrite levels in water samples using Linear Regression, Random Forest, and Neural Networks. Includes evolutionary optimisation benchmarking with Hill Climber and EA on the McCormick function.
+First part includes predicting nitrite levels in water samples using Linear Regression, Random Forest, and Neural Networks. Second part includes  evolutionary optimisation benchmarking with Hill Climber and EA on the McCormick function.
 
 This project was completed as part of a university assignment focused on applied machine learning, data preprocessing, and optimisation methods.
 
@@ -13,13 +13,7 @@ This project demonstrates practical machine learning work on noisy environmental
 - Used cross-validation for more reliable performance estimates.
 - Added an optimisation module (Hill Climber vs Evolutionary Algorithm) to compare search strategies on a standard benchmark function.
 
-## Employer-facing skills demonstrated
-
-- End-to-end ML pipeline thinking: EDA, preprocessing, modelling, evaluation, and interpretation.
-- Data quality engineering: outlier diagnostics and controlled capping strategy.
-- Scientific communication: notebook narrative explains both what was done and why.
-- Experimental design: model comparison under the same prepared dataset and validation approach.
-- Reproducibility: environment and dependency instructions for quick onboarding.
+Results are fully reproducible from the included environment and dependency setup.
 
 ## Technical approach
 
@@ -128,6 +122,10 @@ Run the interactive prediction menu:
 source .venv/bin/activate
 python scripts/predict.py
 ~~~
+
+The screenshot below shows the interactive menu that appears when `python scripts/predict.py` is run.
+
+![Interactive prediction menu](artifacts/screenshots/RF_model_test_screenShot.png)
 
 Use the old batch-style command if you want predictions from a CSV file:
 
