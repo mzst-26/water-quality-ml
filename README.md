@@ -63,15 +63,20 @@ Cross-validation and tuning
 ![Cross-validator results](Analytics/3_cross_validator/cross_validator_results.png)
 ![Tuning evaluation](Analytics/3_cross_validator/tuning_evaluation.png)
 
-## Results (latest run)
+## Final Model Comparison
 
-R2 and RMSE from the latest run:
+| Model | Tuning status | RMSE |
+|---|---|---:|
+| Random Forest | Tuned with GridSearchCV + log transform | 0.069283 |
+| Neural Network | Tuned via architecture search + log transform | 0.099317 |
+| Linear Regression | Not tuned | 0.139754 |
 
-| Model | RMSE | R2 |
-|---|---:|---:|
-| Random Forest | 0.068330 | 0.783073 |
-| Neural Network | 0.098541 | 0.548845 |
-| Linear Regression | 0.132040 | 0.189969 |
+Random Forest is the best performing model. It improved from 0.077628 before tuning to 0.069283 after tuning, which is a 10.7% reduction in RMSE. The Neural Network improved from 0.107853 to 0.099317, which is a 7.9% reduction. Linear Regression had no hyperparameters to optimise.
+
+Final ranking:
+1. Random Forest, RMSE 0.069283
+2. Neural Network, RMSE 0.099317
+3. Linear Regression, RMSE 0.139754
 
 Random Forest test screenshot:
 
